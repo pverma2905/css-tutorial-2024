@@ -1,0 +1,117 @@
+1)Type of css?
+1)inline
+2)internal
+3)external
+
+2)precedence of css??
+inline css has highest precedence than internal and external
+internal css has second highest precedence than external
+inline > internal > external
+
+3)color value types?
+1)name
+2)hexadecimal
+3)rgb
+4)hwb
+
+4)property of background image?
+1)background-image:url()
+2)background-repeat: no-repeat;
+3)background-size: cover/contain
+4)background-position: top-left;
+
+5)property of border??
+border-style: solid;
+border-width: 5px;
+border-color: aqua;
+
+// shorth and property
+border:5px solid red;
+border-radius:5px
+
+6)property used in responsive?
+min-width:100px
+min-height:100px
+max-width:500px
+max-height:900px
+
+7)padding and margin??
+padding:- create space b/w content and border
+margin:- create space outide element or outside border
+
+8)box model??
+every html element crate a box model
+in this box model have content + padding+ border +margin
+when we calulate the height and  width of the element add the margin +padding +border
+
+Total Width Of An Element: - Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+
+Total Height Of An Element: - Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin
+
+9)text property?
+ /* text-align property */
+    text-align: left; /* by default*/
+  
+     /* direction property */
+    direction: ltr;
+    direction: rtl;
+
+     /* text decoration */
+    text-decoration: none;  /* by default*/
+    
+
+    /* text transform */
+    /* text-transform: uppercase;
+    text-transform: lowercase; */
+    text-transform: capitalize;
+
+    /* line height */
+    line-height: 20px;
+
+    /* text indent */
+    text-indent: 80px;
+
+    /* letter spacing */
+    letter-spacing: 2px;
+
+    /* word spacing */
+    word-spacing: normal; /* by default */
+    word-spacing: 4px;
+
+    /* white space */
+    /* white-space: pre; */
+    /* white-space: nowrap; */
+
+    /* writing mode */
+    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+
+    /* text shadow */
+    /* vertical horizontal blur color */
+    text-shadow: 3px 10px 3px red;
+
+ 10)property of anchor tag?
+ a{
+    text-decoration: none;
+    
+}
+
+/* 4 state of anchor tag  order remain same*/
+
+a:link{
+    color: aqua;
+}
+
+a:visited{
+    color: chocolate;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: darkgreen;
+}   
+
+
