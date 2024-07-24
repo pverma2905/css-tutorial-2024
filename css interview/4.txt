@@ -1,0 +1,26 @@
+8)box-sizing?
+in boxmodel element width= actual width+margin+padding+border
+
+to remove the extra width
+box-sizing:border-box
+
+9)inherit-initial??
+inherit:-it take the parent color
+initial:- it take initial color black
+.blue{
+    color: blue;
+}
+.inherit{
+    color: inherit;
+}
+.initial{
+    color: initial;
+}
+
+10)object-fit and object-position?
+it is used in for foreground images
+object-fit:-contain; // aspect ratio correct
+object-fit:-cover; // crop, 
+object-fit:-fill; // change aspect ratio
+
+object-position:- center center

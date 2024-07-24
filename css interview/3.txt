@@ -1,0 +1,37 @@
+22)Pixel and percentage unit?
+/* .first {
+    border: 5px solid black;
+    background-color: blue;
+    color: white;
+    width: 500px;
+    height: 500px;
+} */
+.parent {
+    border: 5px solid red;
+    width: 700px;
+    height: 700px;
+}
+.second {
+    border: 5px solid black;
+    background-color: blue;
+    color: white;
+    width: 50%;
+    height: 50%;
+}
+
+23)how we use em and rem??
+  <!-- em and rem units for font-size -->
+    <!-- em units- font-size depend parent element -->
+    <!-- rem units- font-size depend root element or whole web page -->
+.parent {
+    font-size: 50px;
+}
+.first {
+    /* 1em = 16px */
+    /* font-size: 1em; */
+
+    /* rem unit */
+    font-size: 1rem;
+}
+
+24)what is the use of vh vw vmin vmax??

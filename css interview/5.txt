@@ -1,0 +1,211 @@
+1)pseudo classess??
+it start from : 
+it is nesscarry a child of some one
+it apply on element state, condition ko style karne ke liye
+
+/* li:first-child{
+    color: red;
+}
+li:last-child{
+    color: blue;
+}
+li:nth-child(5){
+    color: blueviolet;
+} */
+li:nth-child(odd){
+    color: blueviolet;
+}
+li:nth-child(even){
+    color: red;
+}
+
+input:focus{
+    border: 5px solid blue;
+}
+
+2)pseudo element ??
+it start from ::
+
+/* p::first-letter{
+    font-size: 40px;
+    color: tomato;
+} */
+/* p::first-line{
+    font-size: 40px;
+    color: tomato;
+}
+
+p::selection{
+    color: blueviolet;
+    background-color: crimson;
+} */
+
+/* ::selection{
+    color: blueviolet;
+    background-color: tomato;
+} */
+
+h1::before{
+    content: "Farzeen ";
+}
+h1::after{
+    content: " Farzeen ";
+}
+
+// it add in first letter, first line, (before, after add)
+
+3)display??
+display:inlne
+display:block:-
+display:inline-block
+display:none
+
+/* block 
+.) new line 
+.) full width 
+.) customize height and width
+
+inline 
+.) same line 
+.) no full width 
+.) not customize height and width
+
+inline-block
+.) same line 
+.) no full width 
+.) customize height and width */
+
+4)differnce b/w display:none and visibility:hidden??
+visiblity:hidden => it hide the data but it take a blank space
+display:none => it hi the data and no blank space   
+
+5)position??
+by default position static 
+
+position element:-
+=>position absolute
+=>position relative
+=>position fixed
+
+if one element is assign a position relative=>it stic to its position and its apply top,bottom,left,right
+if one element is assign a position absolute=>it not stic to its position and its apply top,bottom,left,right, it check the parent have any position if not it take body
+
+if one element is assign a position fixed=>it not stic to its position and its apply top,bottom,left,right
+it check the parent have any position if not it take body
+
+6)zindex??
+it work on position absolute,relative,fixed
+which z-index value is higher which is on top level and override other
+
+7)float and clear float??
+/* float
+1) left
+2) right
+3) none (by default)
+ Clear
+1) left
+2) right
+3) both
+*/
+
+8)2Dtransform??
+transform not working on display inline
+but it work on display block, display inline-block
+a:hover{
+    display: inline-block;
+    /* transform: translate(100px,100px); */
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* scale */
+    /* transform: scale(2,3); */
+    /* skew */
+    /* transform: skew(20deg,30deg); */
+    /* transform: skewX(20deg); */
+    /* transform: skewY(20deg); */
+    /* rotate */
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateY(45deg); */
+
+    /* transform: matrix(scaleX, skewY, skewX, scaleY, translateX,translateY) */
+    transform: matrix(2, -0.4, 0, 1.5, 0, 1);
+}
+
+9)3D transform??
+.content{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    /* transform: perspective(200px) rotate3d(40,40,40, 40deg); */
+    transform: perspective(200px) translate3d(0px,0px,-40px);
+}
+
+10)transition?
+it is used for smooth transition/animation
+   /* transition-property: all; */
+    /* transition-duration: 2s; */
+    /* transition-delay: 2s; */
+    /* transition-timing-function: ease-in-out; */
+    /* shorthand property in transition */
+    /* transition: all duration timing-function delay */
+    transition: all 1s ease-in-out 1s;
+
+11)animation??
+@keyframes techzeen {
+    /* from {
+        background-color: tomato;
+    }
+    to {
+        background-color: aqua;
+    } */
+    0% {
+        background-color: tomato;
+    }
+    25% {
+        width: 400px;
+    }
+    50% {
+        background-color: blueviolet;
+    }
+    75% {
+        width: 500px;
+    }
+    100% {
+        background-color: red;
+    }
+
+
+
+
+
+}
+
+
+
+.animation{
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    animation-name: techzeen;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in; */
+    animation-timing-function: ease-in-out;
+
+
+
+}
+.animation2{
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    animation-name: techzeen;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}    
+

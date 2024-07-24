@@ -5,5 +5,5 @@ img{
     object-fit: contain;
     /* object-fit: cover; */
     /* object-fit: fill; */
-    object-position: bottom center;
+    object-position: center center;
 }
